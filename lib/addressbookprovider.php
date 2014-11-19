@@ -186,7 +186,7 @@ class AddressbookProvider implements \OCP\IAddressBook {
 		$contact->save();
 
 
-		return $this->getAddressbook()->getChild($contact->getId());
+		return $contact;
 	}
 
 	/**
